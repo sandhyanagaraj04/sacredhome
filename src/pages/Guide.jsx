@@ -103,7 +103,7 @@ export default function Guide() {
             ))}
             {Object.keys(quizAnswers).length >= 3 && (
               <div className="polarity-result">
-                <h3 style={{ color: 'var(--gold)', marginBottom: '0.5rem' }}>Your Polarity Profile</h3>
+                <h3 style={{ color: 'var(--green)', marginBottom: '0.5rem' }}>Your Polarity Profile</h3>
                 <div className="polarity-meter">
                   <div className="polarity-marker" style={{ left: `${getPolarityScore()}%` }} />
                 </div>
@@ -151,15 +151,15 @@ export default function Guide() {
                       <span key={t}>{t}</span>
                     ))}
                   </div>
-                  <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--gold-light)' }}>
+                  <p style={{ marginTop: '0.5rem', fontSize: '0.8rem', color: 'var(--green-light)' }}>
                     Domain: {a.domain}
                   </p>
                 </div>
               ))}
             </div>
             {selectedArchetypes.length > 0 && (
-              <div style={{ padding: '1rem', background: 'rgba(201,168,76,0.08)', borderRadius: '8px', marginBottom: '1rem' }}>
-                <p style={{ color: 'var(--gold)', fontWeight: 600, marginBottom: '0.5rem' }}>
+              <div style={{ padding: '1rem', background: 'rgba(61,90,62,0.06)', borderRadius: '8px', marginBottom: '1rem' }}>
+                <p style={{ color: 'var(--green)', fontWeight: 600, marginBottom: '0.5rem' }}>
                   Your Archetypes: {selectedArchetypes.join(', ')}
                 </p>
                 <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>
@@ -240,7 +240,7 @@ export default function Guide() {
             {!showConstitution ? (
               <>
                 <div style={{ marginBottom: '1.5rem' }}>
-                  <label style={{ color: 'var(--gold)', fontSize: '0.9rem', display: 'block', marginBottom: '0.5rem' }}>
+                  <label style={{ color: 'var(--green)', fontSize: '0.9rem', display: 'block', marginBottom: '0.5rem' }}>
                     Family / Household Name
                   </label>
                   <input
@@ -251,7 +251,7 @@ export default function Guide() {
                   />
                 </div>
 
-                <label style={{ color: 'var(--gold)', fontSize: '0.9rem', display: 'block', marginBottom: '0.5rem' }}>
+                <label style={{ color: 'var(--green)', fontSize: '0.9rem', display: 'block', marginBottom: '0.5rem' }}>
                   Add Your Values (up to 7)
                 </label>
                 <div className="value-input-row">

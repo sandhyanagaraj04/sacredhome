@@ -114,7 +114,7 @@ export default function Course() {
     return (
       <div className="page">
         <div className="page-header">
-          <p style={{ color: 'var(--gold)', cursor: 'pointer' }} onClick={() => { setActiveLesson(null); }}>
+          <p style={{ color: 'var(--green)', cursor: 'pointer' }} onClick={() => { setActiveLesson(null); }}>
             ← Back to {mod.title}
           </p>
           <h1 style={{ fontSize: '2rem' }}>{activeLesson.title}</h1>
@@ -159,7 +159,7 @@ export default function Course() {
                 </button>
               )}
               {isComplete && (
-                <span style={{ color: 'var(--accent-green)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{ color: 'var(--green)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                   ✓ Completed
                 </span>
               )}
@@ -189,7 +189,7 @@ export default function Course() {
   return (
     <div className="page">
       <div className="page-header">
-        <p style={{ color: 'var(--gold)', cursor: 'pointer' }} onClick={() => setActiveModule(null)}>
+        <p style={{ color: 'var(--green)', cursor: 'pointer' }} onClick={() => setActiveModule(null)}>
           ← Back to All Modules
         </p>
         <h1 style={{ fontSize: '2.2rem' }}>{activeModule.title}</h1>

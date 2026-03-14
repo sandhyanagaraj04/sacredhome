@@ -135,7 +135,7 @@ export default function Practice() {
             </button>
           )}
           {checkedInToday && (
-            <p style={{ color: 'var(--accent-green)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
+            <p style={{ color: 'var(--green)', fontSize: '0.9rem', marginTop: '0.5rem' }}>
               ✓ You've checked in today!
             </p>
           )}
@@ -175,7 +175,7 @@ export default function Practice() {
 
           {journalEntries.length > 0 && (
             <div className="journal-entries">
-              <h4 style={{ color: 'var(--gold)', marginBottom: '0.75rem', fontSize: '1rem' }}>
+              <h4 style={{ color: 'var(--green)', marginBottom: '0.75rem', fontSize: '1rem' }}>
                 Past Reflections
               </h4>
               {journalEntries.slice(0, 5).map((entry, i) => (
